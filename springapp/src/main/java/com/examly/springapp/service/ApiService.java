@@ -24,6 +24,7 @@ public class ApiService {
          }
                                                                                                         
         public List<Laptop> getAllLaptops() {
-                                                                                                                    return laptops;
-                                                                                                                        }
-                                                                                                                        }
+             return laptops;
+                 
+            }
+ }
