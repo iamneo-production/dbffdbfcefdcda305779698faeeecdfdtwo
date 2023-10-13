@@ -14,17 +14,16 @@ public class ApiService {
                     return laptops.add(laptop);
                         }
                             
-                                public Laptop getLaptopById(int laptopId) {
-                                        for (Laptop laptop : laptops) {
-                                                    if (laptop.getLaptopId() == laptopId) {
-                                                                    return laptop;
-                                                                                }
-                                                                                        }
-                                                                                                return null; // Return null if laptop is not found
-                                                                                                    }
+            public Laptop getLaptopById(int laptopId) {
+                for (Laptop laptop : laptops) {
+                    if (laptop.getLaptopId() == laptopId) {
+                        return laptop;
+                    }
+               }
+            return null; // Return null if laptop is not found
+         }
                                                                                                         
-                                                                                                            public List<Laptop> getAllLaptops() {
+        public List<Laptop> getAllLaptops() {
                                                                                                                     return laptops;
                                                                                                                         }
                                                                                                                         }
-                                                                                                                        

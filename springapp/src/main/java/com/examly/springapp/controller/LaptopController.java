@@ -15,21 +15,20 @@ public class LaptopController {
         @Autowired
             public LaptopController(ApiService apiService) {
                     this.apiService = apiService;
-                        }
+                    }
 
-                            @GetMapping("/{laptopId}")
-                                public Laptop getLaptop(@PathVariable int laptopId) {
-                                        return apiService.getLaptopById(laptopId);
-                                            }
+        @GetMapping("/{laptopId}")
+            public Laptop getLaptop(@PathVariable int laptopId) {
+                    return apiService.getLaptopById(laptopId);
+                    }
 
-                                                @GetMapping("/")
-                                                    public List<Laptop> getLaptops() {
-                                                            return apiService.getAllLaptops();
-                                                                }
+        @GetMapping("/")
+            public List<Laptop> getLaptops() {
+                return apiService.getAllLaptops();
+                    }
 
-                                                                    @PostMapping("/")
-                                                                        public boolean addLaptop(@RequestBody Laptop laptop) {
-                                                                                return apiService.addLaptop(laptop);
-                                                                                    }
-                                                                                    }
-                                                                                    
+        @PostMapping("/")
+        public boolean addLaptop(@RequestBody Laptop laptop) {
+                return apiService.addLaptop(laptop);
+                    }
+        }
